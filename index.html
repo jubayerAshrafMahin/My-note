@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="shortcut icon" href="images/idea-1873540_1280.png" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(240, 194, 194);
+        }
+        hr{
+            display: block;
+            background-color: aliceblue;
+            height: 1px;
+        }
+        .form-container {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            display: block;
+            height: fit-content;
+            width: 25vw;
+            border: 2px solid crimson;
+            border-radius: 20px;
+            background: rgba(255, 221, 221, 0.43);
+            padding: 10px 25px 25px;
+        }
+        h2 {
+            color: crimson;
+        }
+        .field-input{
+            padding: 10px 15px;
+            border-radius: 8px;
+            background-color: transparent;
+            color: black;
+            margin: 5px;
+            border-color: crimson;
+            width: 250px
+
+        }
+        button{
+            background-color: crimson;
+            color: aliceblue;
+            width: 250px;
+            border: none;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>My Form</h2>
+
+        <p style="text-align: center;">Please fill up the form</p>
+        <form action="">
+            <div>
+                <!-- <label for="name">Name</label><br> -->
+                <input class="field-input" type="text" id="name" placeholder="Name">
+            </div>
+            <div>
+                <!-- <label for="idno">ID</label><br> -->
+                <input class="field-input" type="text" id="idno" placeholder="ID">
+            </div>
+            <div>
+                <!-- <label for="location">Location</label><br> -->
+                <input class="field-input" type="text" id="location" placeholder="Location">
+            </div>
+            <div style="margin-top: 10px;">
+                Gender: 
+                <input class="radio-input" type="radio" id="Male" name="gender">
+                <label for="gender">Male </label>
+                <input class="radio-input" type="radio" id="Female" name="gender">
+                <label for="gender">Female </label>
+
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
